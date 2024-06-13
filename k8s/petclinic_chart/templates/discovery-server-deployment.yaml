@@ -26,7 +26,7 @@ spec:
         io.kompose.service: discovery-server
     spec:
       containers:
-        - image: '{{ .Values.IMAGE_TAG_DISCOVERY_SERVER }}'
+        - image: amarnathvenkatam/petclinic-discovery-server:dev
           name: discovery-server
           ports:
             - containerPort: 8761
